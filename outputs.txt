@@ -1,0 +1,15 @@
+output "instance_id" {
+  description = "ID of the EC2 instance"
+  value       = aws_instance.app_server.id
+}
+
+output "instance_public_ip" {
+  description = "Public IP address of the EC2 instance"
+  value       = aws_instance.app_server.public_ip
+}
+
+
+
+PS C:\Users\sagan> terraform output
+instance_id = "i-068873f3e1cfced67"
+instance_public_ip = "54.175.71.140"
